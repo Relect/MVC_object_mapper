@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/product")
 public class ProductController {
-    private ProductService service;
+    private final ProductService service;
 
     @GetMapping
     public ResponseEntity<List<Product>> getAll() {

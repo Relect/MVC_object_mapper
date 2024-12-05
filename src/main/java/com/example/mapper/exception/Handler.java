@@ -18,9 +18,4 @@ public class Handler {
     public ResponseEntity<Object> handleException(ProductEmptyInStock ex) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
     }
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<Object> handleException(Exception ex) {
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex);
-    }
 }
