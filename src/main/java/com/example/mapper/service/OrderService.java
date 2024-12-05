@@ -1,7 +1,6 @@
 package com.example.mapper.service;
 
 import com.example.mapper.dto.OrderDto;
-import com.example.mapper.enums.Status;
 import com.example.mapper.exception.ProductEmptyInStock;
 import com.example.mapper.model.Customer;
 import com.example.mapper.model.Order;
@@ -11,8 +10,6 @@ import com.example.mapper.repository.OrderRepository;
 import com.example.mapper.repository.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.apache.logging.log4j.util.Strings;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
