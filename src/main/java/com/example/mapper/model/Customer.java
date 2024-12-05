@@ -13,7 +13,7 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long costomerId;
+    private Long customerId;
 
     private String firstName;
     private String lastName;
