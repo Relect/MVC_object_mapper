@@ -31,7 +31,4 @@ public class Product {
     @Positive(message = "количество товара должно быть положительным")
     private volatile Integer quantityInStock;
 
-    public synchronized void setQuantityInStock(int quantityInStock) {
-        this.quantityInStock = quantityInStock;
-    }
 }
